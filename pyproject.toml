@@ -1,6 +1,6 @@
 [project]
 name = "cleartrack"
-version = "1.0.0"
+version = "1.0.1"
 description = "A fun CLI tool to track how often you clear your terminal."
 authors = [{name = "Anil Raj Rimal", email = "anilrajrimal@gmail.com"}]
 license = "MIT"
