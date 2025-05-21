@@ -24,9 +24,9 @@ def log_usage():
 
 def print_count(count, stats_mode=False):
     if stats_mode:
-        print(f"\\033[92m[🧹] You have cleared your terminal {count} times. Keep it clean!\\033[0m")
+        print(f"\033[92m[🧹] You have cleared your terminal {count} times. Keep it clean!\033[0m")
     else:
-        print(f"\\033[92m[🧹] Cleared {count} times.\\033[0m")
+        print(f"\033[92m[🧹] Cleared {count} times.\033[0m")
 
 def print_ascii():
     print(r"""
