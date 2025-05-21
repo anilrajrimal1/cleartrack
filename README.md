@@ -14,27 +14,31 @@
 [![Release](https://img.shields.io/github/v/release/anilrajrimal1/cleartrack)](https://github.com/anilrajrimal1/cleartrack/releases)
 [![License](https://img.shields.io/github/license/anilrajrimal1/cleartrack)](LICENSE)
 
-Track your terminal `clear` habits with style.
+**Track your terminal `clear` habits with style.**
 
 ## Features
 
-- Replaces your `clear` command
-- Logs every use locally
-- `--silent`, `--stats`, `--reset`, and `--ascii` flags
-- Easily installable via `pip`
-- Fun + productive tracking your random clear hitting habit
+- Replaces your default `clear` command seamlessly
+- Logs every clear invocation locally for detailed tracking
+- Supports useful flags:
+  - `--stats` — display detailed clear stats with charts
+  - `--reset` — reset your clear count and logs
+  - `--ascii` — display fun ASCII art
+- Easy installation via `pip`
+- Encourages productive and fun terminal usage tracking
 
-## 📸 Example
+## Example
 
 ```bash
-$ clear
-[🧹] Cleared 69 times.
-
 $ clear --stats
-[🧹] You have cleared your terminal 69 times. Keep it clean!
-```
+[🧼] You've cleared 69 times — just getting started!
 
----
+🧹 Terminal Clear Stats (Last 10 days)
+
+2025-05-21 | ██████████████████████████████ 3
+
+Average clears per day: 3.0
+```
 
 ## Installation
 
@@ -42,30 +46,24 @@ $ clear --stats
 pip install cleartrack
 ```
 
-Then add this to your `.bashrc`, `.zshrc`, or `.config/fish/config.fish`:
+Then add the following alias to your shell config `.bashrc`, `.zshrc`, or `.config/fish/config.fish`:
 
 ```bash
 alias clear="cleartrack"
 ```
 
-Reload your shell config:
+Reload your shell configuration:
 ```bash
-source ~/.zshrc  # or ~/.bashrc
+source ~/.bashrc  # or source ~/.zshrc, depending on your shell
 ```
-
----
 
 ## Usage
-
-```bash
-clear            # Clears screen + increments counter
-clear --silent   # no output, just logs for tracking
-clear --stats    # Show counter without clearing
-clear --reset    # Reset the counter to 0
-clear --ascii    # Show some fun ASCII art
-```
-
----
+| Command          | Description                        |
+| ---------------- | ---------------------------------- |
+| `clear`          | Clear screen and increment counter |
+| `clear --stats`  | Show detailed clear stats          |
+| `clear --reset`  | Reset clear counter and logs       |
+| `clear --ascii`  | Display ASCII art                  |
 
 ## Developer Mode
 
@@ -75,12 +73,9 @@ cd cleartrack
 pip install -e .
 ```
 
----
 
 ## 📄 License
 
 MIT © [Anil Raj Rimal](https://github.com/anilrajrimal1)
-
----
 
 > Clear the noise. Count the habit. — `cleartrack`
