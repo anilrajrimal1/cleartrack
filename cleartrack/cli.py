@@ -20,13 +20,13 @@ def save_count(count):
 
 def log_usage():
     with open(LOG_FILE, "a") as f:
-        f.write(f"{datetime.now().isoformat()}\n")
+        f.write(f"{datetime.now().isoformat()}\\n")
 
 def print_count(count, stats_mode=False):
     if stats_mode:
-        print(f"\033[92m[🧹] You have cleared your terminal {count} times. Keep it clean!\033[0m")
+        print(f"\\033[92m[🧹] You have cleared your terminal {count} times. Keep it clean!\\033[0m")
     else:
-        print(f"\033[92m[🧹] Cleared {count} times.\033[0m")
+        print(f"\\033[92m[🧹] Cleared {count} times.\\033[0m")
 
 def print_ascii():
     print(r"""
@@ -54,12 +54,16 @@ def main():
         print_ascii()
         return
 
+    silent = "--silent" in args
+
     count = get_count() + 1
     save_count(count)
     log_usage()
 
     subprocess.run(["clear"])
-    print_count(count, stats_mode=False)
+
+    if not silent:
+        print_count(count, stats_mode=False)
 
 if __name__ == "__main__":
     main()
