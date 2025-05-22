@@ -10,7 +10,6 @@
 # cleartrack CLI
 
 [![PyPI version](https://img.shields.io/pypi/v/cleartrack.svg)](https://pypi.org/project/cleartrack)
-[![Downloads](https://img.shields.io/pypi/dm/cleartrack.svg)](https://pypi.org/project/cleartrack)
 [![Release](https://img.shields.io/github/v/release/anilrajrimal1/cleartrack)](https://github.com/anilrajrimal1/cleartrack/releases)
 [![License](https://img.shields.io/github/license/anilrajrimal1/cleartrack)](LICENSE)
 
